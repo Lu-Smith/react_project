@@ -1,5 +1,8 @@
 import React, {useEffect, useState } from 'react';
 import styled from 'styled-components';
+import {Splide, SplideSlide} from "@splidejs/react-splide";
+import '@splidejs/react-splide/css';
+
 
 
 function Popular() {
@@ -16,17 +19,27 @@ function Popular() {
     }
   return (
     <div>
-        {popular.map((recipe) => {
-            return(
-             <Wrapper key={recipe.id}>
+             <Wrapper >
                 <h3>Popular Picks</h3>
-                <Card>
-                   <p>{recipe.title} /{recipe.vegan === false ? ("Vegan: no") : ("Vegan: yes")}/</p>
-                   <img src={recipe.image} alt={recipe.title} />
-                </Card>
+                <Splide options={{ 
+                    perPage: 3, 
+                    arrows: false,
+                    pagination: false,
+                    drag: "free",
+                    gap: "5rem",
+                }}>
+                    {popular.map((recipe) => {
+                        return (
+                            <SplideSlide key={recipe.id}>
+                                   <Card>
+                                      <p>{recipe.title} {recipe.vegan === false ? (null) : ("(Vegan ✅)")} </p>
+                                      <img src={recipe.image} alt={recipe.title} />
+                                   </Card>
+                            </SplideSlide>
+                        );
+                    })}
+                </Splide>
              </Wrapper>
-            );
-        })}
     </div>
   )
 }
