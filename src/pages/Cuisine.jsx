@@ -12,7 +12,7 @@ function Cuisine() {
         const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=e86dacad0dc243289d1377a4b5dd2776&cuisine=${name}`);
         const recipes = await data.json();
         setCuisine(recipes.results);
-    } 
+    };
 
   useEffect(() => {
     getCuisine(params.type);
