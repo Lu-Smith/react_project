@@ -1,4 +1,5 @@
 import React, {useEffect, useState } from 'react';
+import styled from 'styled-components';
 
 
 function Popular() {
@@ -17,13 +18,31 @@ function Popular() {
     <div>
         {popular.map((recipe) => {
             return(
-             <div key={recipe.id}>
-                <p>{recipe.title}</p>
-             </div>
+             <Wrapper key={recipe.id}>
+                <h3>Popular Picks</h3>
+                <Card>
+                   <p>{recipe.title} /{recipe.vegan === false ? ("Vegan: no") : ("Vegan: yes")}/</p>
+                   <img src={recipe.image} alt={recipe.title} />
+                </Card>
+             </Wrapper>
             );
         })}
     </div>
   )
 }
+
+const Wrapper = styled.div`
+  margin: 4rem  0;
+`
+
+const Card = styled.div`
+    min-height: 25rem;
+    border-radius: 2rem;
+    overflow: hidden;
+
+    img {
+        border-radius: 2rem;
+    }
+`
 
 export default Popular;

@@ -1,6 +1,7 @@
 import React from 'react'
 import Home from './Home';
 
+
 function Pages() {
   return (
     <div>
@@ -8,5 +9,6 @@ function Pages() {
     </div>
   )
 }
+
 
 export default Pages;
