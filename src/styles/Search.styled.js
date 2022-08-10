@@ -3,6 +3,11 @@ import styled from "styled-components";
 export const FormStyle = styled.form`
 margin: 0 20rem;
 
+@media screen and (max-width: 820px) {
+  min-width: 300px;
+  margin: 0 auto;
+}
+
 
 div {
   position: relative;

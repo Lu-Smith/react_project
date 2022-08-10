@@ -6,6 +6,8 @@ max-width: 1200px;
 margin: 0 auto;
 background: #fff;
 padding: 0 30px 30px 30px;
+
+
 `
 
 export const Logo = styled(Link)`
@@ -20,6 +22,10 @@ padding: 4rem 0;
 display: flex;
 justify-content: center;
 align-items: center;
+
+@media screen and (max-width: 480px) {
+    padding: 2rem 0;
+}
 
 svg {
     font-size: 2rem;

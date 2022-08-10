@@ -21,9 +21,22 @@ height: 6rem;
 cursor: pointer;
 transform: scale(0.8);
 
+@media screen and (max-width: 480px) {
+    margin-right: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+}
+
+
 h4 {
     color: #fff;
     font-size: 0.8rem;
+
+    @media screen and (max-width: 480px) {
+        font-size: 0.6rem;
+        margin-top: 0.3rem;
+}
 }
 
 svg {

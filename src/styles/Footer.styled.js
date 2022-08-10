@@ -2,6 +2,14 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
   background-color: #EA474E;
+
+  @media screen and (max-width: 820px) {
+    margin: 0 36px;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin: 0;
+  }
 `;
 
 export const FooterWrap = styled.div`
@@ -15,18 +23,22 @@ export const FooterWrap = styled.div`
   @media screen and (max-width: 768px) {
     padding: 10px 24px;
   }
+
 `;
 
 export const WebsiteRights = styled.small`
   color: #fff;
   margin: 10px 0 40px 0;
+  text-align: center;
+  max-width: 600px;
   @media screen and (max-width: 786px) {
     margin: 0 auto;
     padding-bottom: 50px;
   }
   @media screen and (max-width: 480px) {
-    padding: 0 20px 40px 20px;
+    padding: 0 20px 20px 20px;
     text-align: center;
+    margin-top: 10px;
   }
 `;
 export const SocialIcons = styled.div`
@@ -34,9 +46,12 @@ export const SocialIcons = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 240px;
-  @media screen and (max-width: 7860px) {
+  @media screen and (max-width: 786px) {
     margin: 0 auto;
     padding-bottom: 30px;
+  }
+  @media screen and (max-width: 480px) {
+    padding-bottom: 20px;
   }
 `;
 

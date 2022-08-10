@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
  export const Wrapper = styled.div`
   margin: 4rem  0;
+
+  @media screen and (max-width: 480px) {
+    margin: 2rem  0;
+        }
 `
 
 export const Card = styled.div`
@@ -10,6 +14,16 @@ export const Card = styled.div`
     overflow: hidden;
     position: relative;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+
+    @media screen and (max-width: 820px) {
+        min-height: 15rem;
+        border-radius: 1.5rem;
+        }
+
+    @media screen and (max-width: 480px) {
+        min-height: 10rem;
+        border-radius: 1rem;
+        }
 
 
     img {
@@ -37,6 +51,16 @@ export const Card = styled.div`
         align-items: center;
         font-style: italic;
         letter-spacing: 1px;
+
+        @media screen and (max-width: 820px) {
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: 0.6rem;
+            font-weight: 400;
+        }
     }
 `
 
