@@ -25,7 +25,11 @@ function Popular() {
              <Wrapper >
                 <h3>Popular Picks</h3>
                 <Splide options={{ 
-                    perPage: 3, 
+                    perPage: 3,
+                    breakpoints: {
+                        820: {perPage: 2},
+                        480: {perPage: 1},
+                    },
                     arrows: false,
                     pagination: false,
                     drag: "free",

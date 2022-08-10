@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const FormStyle = styled.form`
+ margin: 0 auto;
 margin: 0 20rem;
 
 @media screen and (max-width: 820px) {

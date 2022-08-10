@@ -24,7 +24,11 @@ function Veggie() {
              <Wrapper >
                 <h3>Vegetarian Picks</h3>
                 <Splide options={{ 
-                    perPage: 3, 
+                    perPage: 3,
+                    breakpoints: {
+                        786: {perPage: 2},
+                        480: {perPage: 1},
+                    },
                     arrows: false,
                     pagination: false,
                     drag: "free",
