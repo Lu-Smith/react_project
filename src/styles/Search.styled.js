@@ -30,8 +30,8 @@ input {
 
 svg {
     position: absolute;
-    top: 50%;
-    left: 5%;
+    top: 60%;
+    left: 8%;
     transform: translate(-50%, -100%);
     color: #fff;
 }
