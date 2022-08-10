@@ -1,5 +1,5 @@
 import {FaPizzaSlice, FaHamburger} from 'react-icons/fa';
-import {GiNoodles, GiChopsticks} from 'react-icons/gi';
+import {GiNoodles, GiChopsticks, GiSteak} from 'react-icons/gi';
 import {List, SLink} from '../styles/Category.styled';
 
 
@@ -16,6 +16,10 @@ const Category = () => {
        <SLink to={"/cuisine/American"}>
         <FaHamburger />
         <h4>American</h4>
+       </SLink>
+       <SLink to={"/cuisine/British"}>
+        <GiSteak />
+        <h4>British</h4>
        </SLink>
        <SLink to={"/cuisine/Thai"}>
         <GiNoodles />

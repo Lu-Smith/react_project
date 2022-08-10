@@ -9,6 +9,7 @@ export const Card = styled.div`
     border-radius: 2rem;
     overflow: hidden;
     position: relative;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 
 
     img {
@@ -34,6 +35,8 @@ export const Card = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        font-style: italic;
+        letter-spacing: 1px;
     }
 `
 
