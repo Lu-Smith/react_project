@@ -8,14 +8,14 @@ function Veggie() {
   const [veggie, setVeggie] = useState([]);
 
   const getVeggie = async () => {
-    const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=e86dacad0dc243289d1377a4b5dd2776&number=9&tags=vegeterian`)
+    const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=e86dacad0dc243289d1377a4b5dd2776&number=9&tags=vegetarian`);
     const data = await api.json();
     setVeggie(data.recipes);
 };
 
   useEffect(() => {
       getVeggie();
-  }, [])
+  }, []);
 
 
 

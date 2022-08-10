@@ -17,7 +17,6 @@ const submitHandler = (e) => {
         <div>
         <FaSearch></FaSearch>
         <input type="text" value={input} onChange={(e) => setInput(e.target.value)}/>
-        <h4>{input}</h4>
         </div>
     </FormStyle>
   )
