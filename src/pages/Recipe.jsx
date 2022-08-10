@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Button, DetailedWrapper, Info } from "../styles/Recipe.styled";
 
 function Recipe() {
 
@@ -17,7 +18,16 @@ useEffect(() => {
 }, [params.name]);
 
   return (
-    <div>{details.title}</div>
+    <DetailedWrapper>
+      <div>
+        <h2>{details.title}</h2>
+        <img src={details.image} alt={details.title} />
+      </div>
+      <Info>
+        <Button>Instructions</Button>
+        <Button>Ingredients</Button>
+      </Info>
+    </DetailedWrapper>
   )
 }
 
