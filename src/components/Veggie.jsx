@@ -26,7 +26,7 @@ function Veggie() {
                 <Splide options={{ 
                     perPage: 3,
                     breakpoints: {
-                        786: {perPage: 2},
+                        1000: {perPage: 2},
                         480: {perPage: 1},
                     },
                     arrows: false,
