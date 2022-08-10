@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
-  background-color: #101522;
+  background-color: #EA474E;
 `;
 
 export const FooterWrap = styled.div`
@@ -43,16 +43,35 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
   color: #ffff;
   font-size: 24px;
+  line-height: 35px;
+
+  &:hover {
+    color: bisque;
+    font-size: 28px;
+  }
+
 `;
 
 export const Portfolio = styled.a`
-  color: #a2a8d3;
+  color: #fff;
   font-size: 14px;
   text-decoration: none;
+  font-weight: bold;
+
+  &:hover {
+    color: bisque;
+    border-bottom: 1px solid bisque;
+  }
 `;
 
 export const GitHub = styled.a`
-  color: #a2a8d3;
+  color: #fff;
   font-size: 14px;
   text-decoration: none;
+  font-weight: bold;
+
+  &:hover {
+    color: bisque;
+    border-bottom: 1px solid bisque;
+  }
 `;
