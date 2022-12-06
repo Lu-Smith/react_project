@@ -41,6 +41,35 @@ export const DetailedWrapper = styled.div`
     width: 300px;
   }
 }
+
+  @media screen and (max-width: 480px) {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    h2 {
+      margin-bottom: 1rem;
+      letter-spacing: 1.5px;
+      font-size: 1rem;
+    }
+
+     img {
+      border: 1px solid red;
+      border-radius: 10px;
+      width: 150px;
+    }
+
+    h3 {
+      font-size: 0.7rem;
+      line-height: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    li {
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+      margin-top: 0.5rem;
+      margin-left: 0.7rem;
+  }
+}
 `
 export const Button = styled.button`
 padding: 0.8rem 1.8rem;
@@ -54,6 +83,12 @@ font-weight: 600;
   margin: 0.5rem;
   padding: 0.6rem 1.4rem;
 }
+
+@media screen and (max-width: 480px) {
+  margin: 0.2rem;
+  padding: 0.3rem 1rem;
+  font-size: 0.5rem;
+}
 `
 export const Info = styled.div`
 margin-left: 2rem;
@@ -66,4 +101,13 @@ text-align: center;
   width: 100%;
   height: 50vh;
 }
+
+@media screen and (max-width: 480px) {
+  padding: 5px 15px;
+  margin-left: 0.8rem;
+  width: 100%;
+  height: 70vh;
+}
+
+
 `

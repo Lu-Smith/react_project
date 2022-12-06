@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom';
 export const List = styled.div`
 display: flex;
 justify-content:center;
-margin-top: 1.5rem;
+margin: 1.5rem 0 1.5rem 0;
 `;
 
 export const SLink = styled(NavLink)`
@@ -45,9 +45,13 @@ svg {
 
 @media screen and (max-width: 820px) {
     margin: 0 0.8rem;
-    width: 4em;
+    width: 5rem;
     height: 5rem;
     padding: 0.5rem;
+
+    h4 {
+    font-size: 0.75rem;
+}
 }
 
 @media screen and (max-width: 480px) {

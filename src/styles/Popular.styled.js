@@ -4,7 +4,7 @@ import styled from 'styled-components';
   margin: 4rem  0;
 
   @media screen and (max-width: 480px) {
-    margin: 2rem  0;
+    margin: 2rem 0;
         }
 `
 
@@ -24,7 +24,6 @@ export const Card = styled.div`
         min-height: 10rem;
         border-radius: 1rem;
         }
-
 
     img {
         border-radius: 2rem;
