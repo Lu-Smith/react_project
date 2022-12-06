@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 
 export const DetailedWrapper = styled.div`
-  margin-top: 10rem;
+  margin-top: 3rem;
   margin-bottom: 5rem;
   display: flex;
   .active {
@@ -38,12 +38,10 @@ export const DetailedWrapper = styled.div`
     img {
     border: 2px solid red;
     border-radius: 15px;
-    width: 400px;
+    width: 300px;
   }
 }
-
 `
-
 export const Button = styled.button`
 padding: 0.8rem 1.8rem;
 color: #313131;
@@ -65,6 +63,7 @@ text-align: center;
 
 @media screen and (max-width: 820px) {
   margin-left: 1rem;
-  padding: 5px 14px;
+  width: 100%;
+  height: 50vh;
 }
 `
