@@ -2,32 +2,38 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
   background-color: #EA474E;
+  font-size: 20px;
 
   @media screen and (max-width: 820px) {
     margin: 0;
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
   }
 `;
 
 export const FooterWrap = styled.div`
-  padding: 48px 24px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
-  @media screen and (max-width: 768px) {
-    padding: 10px 24px;
+  @media screen and (max-width: 820px) {
+    padding: 10px;
   }
 
 `;
 
 export const WebsiteRights = styled.small`
   color: #fff;
-  margin: 10px 0 40px 0;
+  margin: 10px 0 20px 0;
   text-align: center;
   max-width: 600px;
-  @media screen and (max-width: 786px) {
+  @media screen and (max-width: 820px) {
     margin: 0 auto;
     padding-bottom: 50px;
   }
@@ -42,7 +48,7 @@ export const SocialIcons = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 240px;
-  @media screen and (max-width: 786px) {
+  @media screen and (max-width: 820px) {
     margin: 0 auto;
     padding-bottom: 30px;
   }
@@ -60,7 +66,6 @@ export const SocialIconLink = styled.a`
     color: bisque;
     font-size: 28px;
   }
-
 `;
 
 export const Portfolio = styled.a`
