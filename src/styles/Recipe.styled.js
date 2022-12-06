@@ -18,22 +18,53 @@ export const DetailedWrapper = styled.div`
     letter-spacing: 2px;
     text-align: center;
   }
+
+  img {
+    border: 2px solid red;
+    border-radius: 15px;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
   
   li {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 2.5rem;
+    list-style: square;
   }
+
+  @media screen and (max-width: 820px) {
+    img {
+    border: 2px solid red;
+    border-radius: 15px;
+    width: 400px;
+  }
+}
 
 `
 
 export const Button = styled.button`
-padding: 1rem 2rem;
+padding: 0.8rem 1.8rem;
 color: #313131;
 background: #fff;
 border: 2px solid #000;
-margin-right: 2rem;
+margin: 1rem;
 font-weight: 600;
+
+@media screen and (max-width: 820px) {
+  margin: 0.5rem;
+  padding: 0.6rem 1.4rem;
+}
 `
 export const Info = styled.div`
-margin-left: 10rem;
+margin-left: 2rem;
+background-color: #ffcab0; 
+padding: 5px 40px;
+text-align: center;
+
+@media screen and (max-width: 820px) {
+  margin-left: 1rem;
+  padding: 5px 14px;
+}
 `
