@@ -5,12 +5,11 @@ export const FooterContainer = styled.footer`
   font-size: 20px;
 
   @media screen and (max-width: 820px) {
-    margin: 0;
     font-size: 18px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 16px;
+    font-size: 12px;
   }
 `;
 
@@ -23,9 +22,12 @@ export const FooterWrap = styled.div`
   max-width: 1100px;
   margin: 0 auto;
   @media screen and (max-width: 820px) {
-    padding: 10px;
+    padding: 18px;
+    max-width: 800px;
   }
-
+  @media screen and (max-width: 480px) {
+    padding: 18px 0;
+  }
 `;
 
 export const WebsiteRights = styled.small`
@@ -35,10 +37,10 @@ export const WebsiteRights = styled.small`
   max-width: 600px;
   @media screen and (max-width: 820px) {
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   @media screen and (max-width: 480px) {
-    padding: 0 20px 20px 20px;
+    padding: 0 0 20px 0;
     text-align: center;
     margin-top: 10px;
   }
@@ -50,10 +52,10 @@ export const SocialIcons = styled.div`
   width: 240px;
   @media screen and (max-width: 820px) {
     margin: 0 auto;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
   }
   @media screen and (max-width: 480px) {
-    padding-bottom: 20px;
+    padding-bottom: 0px;
   }
 `;
 
@@ -65,6 +67,11 @@ export const SocialIconLink = styled.a`
   &:hover {
     color: bisque;
     font-size: 28px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 24px;
+    line-height: 30px;
   }
 `;
 
@@ -78,6 +85,10 @@ export const Portfolio = styled.a`
     color: bisque;
     border-bottom: 1px solid bisque;
   }
+
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+  }
 `;
 
 export const GitHub = styled.a`
@@ -89,5 +100,9 @@ export const GitHub = styled.a`
   &:hover {
     color: bisque;
     border-bottom: 1px solid bisque;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
   }
 `;
