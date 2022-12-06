@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 
+
 export const DetailedWrapper = styled.div`
   margin-top: 10rem;
   margin-bottom: 5rem;
@@ -12,6 +13,10 @@ export const DetailedWrapper = styled.div`
 
   h2 {
     margin-bottom: 2rem;
+    font-style: italic;
+    font-family: 'Nerko One', cursive;
+    letter-spacing: 2px;
+    text-align: center;
   }
   
   li {

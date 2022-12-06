@@ -12,9 +12,9 @@ padding: 0 30px 30px 30px;
 
 export const Logo = styled(Link)`
 text-decoration: none;
-font-size: 1.5rem;
+font-size: 2rem;
 font-weight: 400;
-font-family: 'Lobster', cursive;
+font-family: 'Nerko One', cursive;
 `
 
 export const Nav = styled.div`
